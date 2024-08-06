@@ -34,8 +34,8 @@ nav{
     background: linear-gradient(#ffffff31,#cacaca34,#ffffff15);
     
     backdrop-filter: blur(10px );
-    margin-block: -93px;
-    height: 70px;
+    margin-block: -48px;
+    height: 10vh;
     width: 100%;
     
     justify-content: space-between;
@@ -46,7 +46,7 @@ nav{
 }
 nav ul{
     display: flex;
-    gap: 25px;
+    gap: 2vw;
     margin-right: 100px;
 }
 nav ul li{
@@ -78,8 +78,8 @@ nav ul li a:hover::after{
   
 }
 .first{
-    height: 500px;
-    
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,7 +92,7 @@ nav ul li a:hover::after{
 }
 
 .left{
-    width: 60%;
+    width: auto;
     align-content: center;
     
     
@@ -113,9 +113,11 @@ nav ul li a:hover::after{
     width: 60%;
 }
 .right{
-    width: 40%;
-    height: 400px;
-    align-items: center;
+
+  margin-block-start: 20vh;
+    
+   
+   
     
     
 }
