@@ -6,13 +6,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/44a6e55a64.js" crossorigin="anonymous"></script>     
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body style="font-family: poppins;">
-    <div class="header">
+    <div class="header" style=" margin-block: 40px;">
     <nav class="backdrop-blur-md">
         <h2 class="font-semibold" style="margin-left: 100px;"><span style="color: rgb(69, 106, 228);">A</span>ditya's Portfolio</h2>
         <ul>
@@ -51,6 +51,8 @@
     <script src="script.js"> </script>
 </div>
 
+</div>
+
 <div id="about">
     <div class="about-cont">
         <div class="row">
@@ -58,34 +60,36 @@
                 <img src="./img/aboutimg.jpg" alt="">
             </div>
             <div class="aboutcol-2">
-                <h1 xclass="font-bold">About Me</h1>
+                <h1 class="font-bold">About Me</h1>
                 <p>Hi there! I'm Aditya Jaiswal, a passionate Frontend Web Developer with a knack for creating
                      beautiful and user-friendly websites.  I specialize in crafting responsive,interactive, and 
                      visually appealing web interfaces that provide an exceptional user experience.</p>
                      <div class="tab-titles">
                         <p class="tab-link active-link" onclick="opentab('#Skills')">Skills</p>
-                        <p class="tab-link"onclick="opentab('#Education')">Education</p>
-                        <p class="tab-link"onclick="opentab('#Certifications')">Certifications</p>
+                        
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
-                        <h4><span style="color: #515be9;">Devlopment</span></h4><br>
+                        <h4><span style="color: #515be9;">Devlopment</span></h4>
                         <ul>
-                            <li>Html&amp;Css</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <li>Python</li>
-                            <li>MySql</li>
+                            <li>&#9775; Html&amp;Css</li>
+                            <li>&#9775; JavaScript</li>
+                            <li>&#9775; PHP</li>
+                            <li>&#9775; Python</li>
+                            <li>&#9775; MySql</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="Education">
+                    <div><p class="tab-link active-link">Education</p><br>
+                        </div>
+                    <div >
                         
                         <ul>
                             <li>BCA from Inspiria Knowledge Campus <br>
-                            2022-2025</li>
+                            2022-2025</li><br>
                            
                         </ul>
                     </div>
-                    <div class="tab-contents" id="Certifications">
+                    <div><p class="tab-link active-link">Certifications</p></div><br>
+                    <div >
                         
                         <ul>
                             <li>Certificate of Full Stack Mastery <a href="https://www.linkedin.com/posts/aditya-jaiswal-359453245_certificate-of-full-stack-mastery-activity-7161208138811985920-h4ur?utm_source=share&utm_medium=member_desktop" target="_blank">View</a></li>
@@ -97,6 +101,48 @@
         </div>
     </div>
 
+</div>
+<div id="sevices">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>The project involved creating a visually striking and user-friendly design that highlights the photographer's portfolio. Using HTML, CSS, and
+                 JavaScript, I developed a responsive website that looks great on all devices. </p>
+        <a href="">learn more
+        </a>
+    </div>
+    <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>myPortfolio </p>
+    <a href="">learn more
+    </a>
+</div>
+<div class="card" >
+    <i class="fa-solid fa-code"></i>    
+    <h2>Web Design</h2>
+    <p>myPortfolio </p>
+<a href="">learn more
+</a>
+    </div> 
+            
+        </div>
+    </div>
+ 
+</div>
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+        <div class="work-li">
+           <div class="work">
+            <img src="/img/" alt="">
+      
+           </div>  
+        </div>
+    </div>
 </div>
 
 <script>
