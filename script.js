@@ -1,20 +1,20 @@
 var typed = new Typed('#element', {
-    strings: ['Frontend Web developer.', '&amp; Web Designer'],
+    strings: ['Frontend Web developer.', '&amp; Web Designer.'],
     typeSpeed: 50,
     loop:true,
   });
 
   var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-cont");
-  function opentab(tabname){    
-    for(tablink of tablinks){
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(event,tabname){    
+    for( let tablink of tablinks){
       tablink.classList.remove("active-link")
     }
-    for(tabcontent of tabcontents){
+    for( let tabcontent of tabcontents){
       tabcontent.classList.remove("active-tab")
     }
-    Event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add(" active-tab")
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add(" active-tab");
     
 
-  }
+  } 

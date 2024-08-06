@@ -281,15 +281,19 @@ nav ul li a:hover::after{
 .tab-link.active-link::after{
   width: 100%;
 }
-.tab-cont ul li a{
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0 ;
+}
+.tab-contents ul li a{
   text-decoration: none;
   color: #126bf0;
 
 
 }
-.tab-cont{
+.tab-contents{
  display: none; 
 }
-.tab-cont.active-tab{
+.tab-contents.active-tab{
   display: block;
 }
