@@ -326,13 +326,16 @@ list-style: none;
   display: block;
 }
 #sevices{ 
+  height: 70vh;
   padding: 20px 60px; 
+  background:  rgb(7, 15, 40);
 }
 .services-list{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap:40px ;
   margin-top: 50px;
+  
   
 
 
@@ -374,4 +377,34 @@ list-style: none;
   font-size: 12px;
   display: inline-block;
 
+}
+#portfolio{
+  padding: 50px 60px;
+}
+.work-li{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap:40px;
+  margin-top:50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width:50% ;
+  border-radius: 10px;
+  display: block;
+
+}
+.layer{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6),#126bf0);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
 }
