@@ -28,7 +28,9 @@ body{
 ::-webkit-scrollbar-corner{
   border-radius: 10px;
 }
-
+.container{
+  padding: 10px 10%;
+}
 nav{
     display: flex;
     background: linear-gradient(#ffffff31,#cacaca34,#ffffff15);
@@ -249,11 +251,11 @@ nav ul li a:hover::after{
     box-shadow: 0px -0px 200px rgba(128, 128, 128, 0.404);
   }
   .row{
-    align-content: center;
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: center;
+      
   }  
   .aboutcol-1 img{
     width: 300px;
@@ -265,7 +267,7 @@ nav ul li a:hover::after{
 
 .aboutcol-1 {
   flex-basis: 35%;
-  padding-left: 110px;
+  
     
 }
 .aboutcol-2{
@@ -327,7 +329,7 @@ list-style: none;
 }
 #sevices{ 
   height: 70vh;
-  padding: 20px 60px; 
+  
   background:  rgb(7, 15, 40);
 }
 .services-list{
@@ -378,9 +380,7 @@ list-style: none;
   display: inline-block;
 
 }
-#portfolio{
-  padding: 50px 60px;
-}
+
 .work-li{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -393,18 +393,102 @@ list-style: none;
   overflow: hidden;
 }
 .work img{
-  width:50% ;
+  width: 100%;
+  
+  object-fit: cover;
   border-radius: 10px;
   display: block;
+  transition: 0.5s;
 
 }
 .layer{
   width: 100%;
-  height: 100%;
+  height: 0%;
   background: linear-gradient(rgba(0,0,0,0.6),#126bf0);
   border-radius: 10px;
   position: absolute;
   left: 0;
   bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  font-size: 14px;
+  transition: 0.3s;
   
+}
+
+.layer h3{
+  font-weight: 500;
+  margin-bottom:20px ;
+
+}
+.layer a{
+  margin-top: 20px;
+  color: #126bf0; 
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  border-radius: 50%;
+  height: 60px;
+  text-align: center;
+}
+.work:hover img{
+  transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%; 
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border:  1px solid #126bf0;
+  padding: 14px 50px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #fff;
+  transition: 0.5s;
+
+
+}
+.btn:hover{ 
+  background: rgb(43, 128, 226);
+  
+}
+
+.contact-left{
+  flex-basis: 35%
+  
+}
+
+.contact-right{
+  flex-basis: 65%
+  
+}
+
+.contact-left p{
+  margin-top: 30px; 
+  
+}
+.contact-left p i{
+  color: #0165fc;
+  margin-right: 13px;
+  font-size: 25px;
+}
+.social-icon{
+  margin-top: 30px;
+}
+.social-icon a{
+  text-decoration: none;
+  margin-right: 15px;
+  color:#0044ff ;
+display: inline-block;
+transition: transform 0.5s;
+font-size: 30px;
 }
