@@ -3,3 +3,4 @@ var typed = new Typed('#element', {
     typeSpeed: 50,
     loop:true,
   });
+console.log("welcome! to My portfolio");

@@ -16,6 +16,7 @@ body{
     background-color: rgb(7, 15, 40);
 
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -80,23 +81,20 @@ nav ul li a:hover::after{
   
 }
 .first{
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 93px;
+    margin-bottom: 40px;
     z-index: -1;
-}
-.invisible{
-  height: 100vh;
-
 }
 
 .left{
     width: auto;
     align-content: center;
-    
+    height: auto;
     
     padding: 0px 60px;
     text-align: left;
@@ -115,7 +113,7 @@ nav ul li a:hover::after{
     width: 60%;
 }
 .right{
-
+height: auto;
   margin-block-start: 20vh;
     
    
@@ -123,11 +121,7 @@ nav ul li a:hover::after{
     
     
 }
-.right img{
-   
-    width: 500px;
-    
-}
+
 .btn1 {
     padding: 15px 25px;
     border: unset;
@@ -254,9 +248,10 @@ nav ul li a:hover::after{
   #about{
     background-color: rgb(7, 15, 40);
     padding: 80px 0;
-    height: 100vh;
+    height: auto;
     width: 100%;
     box-shadow: 0px -0px 200px rgba(128, 128, 128, 0.404);
+    margin-top: 20px;
   }
   .row{
     
@@ -336,7 +331,7 @@ list-style: none;
   display: block;
 }
 #sevices{ 
-  height: 70vh;
+  height: auto;
   
   background:  rgb(7, 15, 40);
 }
@@ -620,6 +615,89 @@ list-style: none;
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 600px) {
-  
+
+/* Base styles (Desktop) */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header nav ul li {
+      margin: 10px 0;
+  }
+
+  .first {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .first .left, .first .right {
+      width: 100%;
+  }
+
+  .first .right img {
+      width: 80%;
+      margin: 20px auto;
+  }
+
+  .aboutcol-1, .aboutcol-2 {
+      width: 100%;
+      text-align: center;
+  }
+
+  .aboutcol-1 img {
+      width: 100%;
+  }
+
+  .services-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 90%;
+      margin: 20px 0;
+  }
+
+  .work-li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .work {
+      width: 90%;
+      margin: 20px 0;
+  }
+
+  .contact-left, .contact-right {
+      width: 100%;
+      text-align: center;
+  }
+
+  .contact-right .card {
+      width: 90%;
+      margin: 20px auto;
+  }
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+h2, h1, p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
 }
