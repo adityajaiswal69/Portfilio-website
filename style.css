@@ -9,8 +9,6 @@
     font-style: normal;
   }
 body{
-    
-
     color: #fff;
     font-family:"Poppins" ;
     background-color: rgb(7, 15, 40);
@@ -44,9 +42,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 4;
-    
+    z-index: 4;    
 }
+
 nav ul{
     display: flex;
     gap: 2vw;
@@ -114,12 +112,7 @@ nav ul li a:hover::after{
 }
 .right{
 height: auto;
-  margin-block-start: 20vh;
-    
-   
-   
-    
-    
+  margin-block-start: 20vh;    
 }
 
 .btn1 {
