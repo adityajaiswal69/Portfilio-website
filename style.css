@@ -651,7 +651,7 @@ nav .fas{
       display: flex;
       flex-direction: column;
       
-      padding: 40px 10px 0px 10px;
+      padding: 50px 10px 0px 10px;
   }
 
   .left{
@@ -707,7 +707,7 @@ nav .fas{
       margin: 20px 0;
   }
 .container{
-  padding: 10px;
+  padding: 20px;
 }
   .work-li {
       display: flex;
@@ -716,7 +716,7 @@ nav .fas{
   }
 
   .work {
-      width: 90%;
+      width: 100%;
       margin: 20px 0;
       
   }
@@ -728,7 +728,7 @@ nav .fas{
   }
 
   .contact-right .card {
-      width: 90%;
+      width: 100%;
       margin: 20px auto;
   }
   button {
