@@ -38,7 +38,7 @@ nav{
     margin-block: -48px;
     height: 10vh;
     width: 100%;
-    
+    padding: 0px 40px 0px 40px;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -48,7 +48,7 @@ nav{
 nav ul{
     display: flex;
     gap: 2vw;
-    margin-right: 100px;
+    
 }
 nav ul li{
     list-style: none;
@@ -611,32 +611,66 @@ body {
   margin: 0;
   padding: 0;
 }
-
+nav .fas{
+ display: none;
+}
 /* Mobile styles */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  
   .header nav ul {
       display: flex;
       flex-direction: column;
       align-items: center;
   }
-
-  .header nav ul li {
-      margin: 10px 0;
+  nav ul {
+    background: #0165fc;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
   }
 
+ 
+  nav .fas{
+    display: block;
+  }
+  .header nav ul li {
+      margin: 10px 0;
+      display: block;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
   .first {
       display: flex;
       flex-direction: column;
-      text-align: center;
-      padding: 20px;
+      
+      padding: 40px 10px 0px 10px;
   }
 
+  .left{
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .left p{
+    width: 100%;
+  }
+  .right{
+    align-items: center;
+  }
   .first .left, .first .right {
       width: 100%;
+      
   }
 
   .first .right img {
-      width: 80%;
+      width: 100%;
       margin: 20px auto;
   }
 
@@ -645,7 +679,12 @@ body {
       text-align: center;
   }
 
-
+  .tab-contents ul li{
+    list-style: none;
+      margin-right: 10px  ;
+      margin-bottom: 10px;
+    
+    }
   .tab-titles {
     display: flex;
     justify-content: center;
@@ -654,9 +693,7 @@ body {
   .tab-link{
     margin: 0;
   }
-  .tab-contents ul{
-   
-  }
+
 .row{
   justify-content: space-around;
 }
@@ -669,7 +706,9 @@ body {
       width: 90%;
       margin: 20px 0;
   }
-
+.container{
+  padding: 10px;
+}
   .work-li {
       display: flex;
       flex-direction: column;
