@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Portfolio</title>
     <link rel="icon" href="" type="image/icon type">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://kit.fontawesome.com/44a6e55a64.js" crossorigin="anonymous"></script>     
+    <script src="https://kit.fontawesome.com/44a6e55a64.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
 <body style="font-family: poppins;">
@@ -19,231 +20,503 @@
         <nav class="backdrop-blur-md">
             <h2 class="font-semibold" ><span style="color: rgb(69, 106, 228);">A</span>ditya's Portfolio</h2>
             <ul id="sidebar">
-                <li><a href="">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact ">Contact</a></li>
-             
-             <i class=" fas fa-regular fa-circle-xmark " onclick="closemenu()"></i>
+                <li><a href="#home" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            <i class=" fas fa-solid fa-bars"  onclick="openmenu()"></i> 
+            <div class="menu-toggle" onclick="openmenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             
         </nav>
     </div>
-    <div class="first">
-        <div class="left">
-            <h2 class="font-bold">Hello, I'm <span style="color: rgb(44, 83, 210);">Aditya</span><br>
-                <span id="element"></span>
-                
-            </h2>
-            <p style="color: rgb(201, 200, 200);">As a passionate and skilled Frontend Web Developer, I bring a strong foundation
-                in HTML, CSS, and JavaScript, coupled with extensive experience in crafting responsive and user-centric web interfaces.</p><br>
-                <button class="btn1"><a href="https://www.linkedin.com/in/aditya-jaiswal-359453245/" target="_blank">Hire Me </a>   </button>                
-                <button class="btn2"><span class="spn2"><a href="./img/My cv.pdf" download>
-                    Download CV
-                  </a></span></button>                
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span>Aditya</span></h1>
+                    <div class="typed-text">
+                        <span id="element"></span>
+                    </div>
+                    <p>As a BCA student in 6th semester and Software Developer at OMX Digital PVT LTD, I bring expertise in full-stack development with PHP (Laravel), React.js, and modern web technologies. I specialize in crafting responsive and user-centric web applications.</p>
 
+                    <div class="hero-buttons">
+                        <a href="https://www.linkedin.com/in/aditya-jaiswal-359453245/" target="_blank" class="btn-modern btn-primary">
+                            <i class="fas fa-user-tie"></i>
+                            Hire Me
+                        </a>
+                        <a href="./img/My cv.pdf" download class="btn-modern btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
 
-
+                <div class="hero-image">
+                    <img src="./img/a1.png" alt="Aditya Jaiswal">
+                </div>
+            </div>
         </div>
-        <div class="right">
-            <img src="./img/a1.png" alt="">
-            
-        </div>
-
-
-
-
-    </div>
+    </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"> </script>
 </div>
 
 </div>
 
-<div id="about">
+<section id="about" class="section">
     <div class="container">
-    <div class="about-cont">
-        <div class="row">
-            <div class="aboutcol-1">
-                <img src="./img/IMG-20240822-WA0029.jpg" alt="">
+        <h2 class="section-title">About Me</h2>
+        <div class="">
+            <div class="about-image">
+                <img src="./img/IMG-20240822-WA0029.jpg" alt="Aditya Jaiswal - Full Stack Developer">
             </div>
-            <div class="aboutcol-2">
-                <h1 class="font-bold">About Me</h1>
-                <p>Hi there! I'm Aditya Jaiswal, a passionate Frontend Web Developer with a knack for creating
-                     beautiful and user-friendly websites.  I specialize in crafting responsive,interactive, and 
-                     visually appealing web interfaces that provide an exceptional user experience.</p>
-                     <div class="tab-titles">
-                        <p class="tab-link active-link" onclick="opentab('#Skills')">Skills</p>
-                        
+            <div class="about-text">
+                <div class="about-intro">
+                    <p>Hi there! I'm <strong>Aditya Jaiswal</strong>, a passionate Full-Stack Developer currently pursuing BCA from Inspiria Knowledge Campus (CGPA: 7.82/10). I'm currently working as a <strong>Software Developer</strong> at OMX Digital PVT LTD, where I collaborate with cross-functional teams to build and maintain web applications using PHP (Laravel) and React.js.</p>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7.82</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+                <div class="tab-container">
+                    <div class="tab-titles">
+                        <button class="tab-link active-link" onclick="opentab('#Skills', this)">
+                            <i class="fas fa-code"></i> Skills
+                        </button>
+                        <button class="tab-link" onclick="opentab('#Experience', this)">
+                            <i class="fas fa-briefcase"></i> Experience
+                        </button>
+                        <button class="tab-link" onclick="opentab('#Education', this)">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </button>
+                        <button class="tab-link" onclick="opentab('#Certificate', this)">
+                            <i class="fas fa-certificate"></i> Certifications
+                        </button>
+                        <button class="tab-link" onclick="opentab('#Activities', this)">
+                            <i class="fas fa-users"></i> Activities
+                        </button>
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
-                        <h4><span style="color: #515be9;">Devlopment</span></h4>
-                        <ul>
-                            <li>&#8226; JavaScript</li>
-                            <li>&#8226; PHP</li>
-                            <li>&#8226; Python</li>
-                            <li>&#8226; MySql</li>
-                            <li>&#8226; Html&amp;Css</li>
-                            <li>&#8226; </li>
-                        </ul>
-                    </div>
-                    <div id="Education"><p class="tab-link active-link"> Education </p><br>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <div class="skill-header">
+                                    <i class="fas fa-code"></i>
+                                    <h4>Programming Languages</h4>
+                                </div>
+                                <ul class="skill-list">
+                                    <li><i class="fas fa-chevron-right"></i>PHP</li>
+                                    <li><i class="fas fa-chevron-right"></i>JavaScript</li>
+                                    <li><i class="fas fa-chevron-right"></i>TypeScript</li>
+                                    <li><i class="fas fa-chevron-right"></i>HTML5 & CSS3</li>
+                                    <li><i class="fas fa-chevron-right"></i>SQL</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <div class="skill-header">
+                                    <i class="fas fa-layer-group"></i>
+                                    <h4>Frameworks & Libraries</h4>
+                                </div>
+                                <ul class="skill-list">
+                                    <li><i class="fas fa-chevron-right"></i>Laravel</li>
+                                    <li><i class="fas fa-chevron-right"></i>React.js</li>
+                                    <li><i class="fas fa-chevron-right"></i>Next.js</li>
+                                    <li><i class="fas fa-chevron-right"></i>Node.js</li>
+                                    <li><i class="fas fa-chevron-right"></i>Bootstrap</li>
+                                    <li><i class="fas fa-chevron-right"></i>Tailwind CSS</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <div class="skill-header">
+                                    <i class="fas fa-tools"></i>
+                                    <h4>Tools & Platforms</h4>
+                                </div>
+                                <ul class="skill-list">
+                                    <li><i class="fas fa-chevron-right"></i>Git & GitHub</li>
+                                    <li><i class="fas fa-chevron-right"></i>Postman</li>
+                                    <li><i class="fas fa-chevron-right"></i>XAMPP</li>
+                                    <li><i class="fas fa-chevron-right"></i>VS Code</li>
+                                    <li><i class="fas fa-chevron-right"></i>npm</li>
+                                </ul>
+                            </div>
                         </div>
-                    <div class="edu" >
-                        
-                        
-                        <ul>
-                            <li><i class='fas fa-graduation-cap'></i> BCA from Inspiria Knowledge Campus
-                                </li>
-                                <li style=" margin-left:25px">2022-2025</li><br>
-                           
-                        </ul>
                     </div>
-                    <div id="Certificate"><p class="tab-link active-link">Certifications</p></div><br>
-                    <div class="edu">
-                        
-                        <ul>
-                            <li><i class="fa-solid fa-certificate"></i> Certificate of Full Stack Mastery <a href="https://www.udemy.com/certificate/UC-80ecbaf9-0d2e-45ae-aeab-0f78375e8966/" target="_blank">View</a><br>
-                                <i class="fa-solid fa-certificate"></i> Certificate of WebDevelopment internship <a href="https://www.linkedin.com/in/aditya-jaiswal-web/details/certifications/1731725577174/single-media-viewer/?profileId=ACoAADzBqzUBDSZDUy4mA8cKeVw4dtqdDfQYI_o" target="_blank">View</a><br>
+                    <div class="tab-contents" id="Experience">
+                        <div class="experience-list">
+                            <div class="experience-item">
+                                <div class="exp-header">
+                                    <div class="exp-title">
+                                        <i class="fas fa-briefcase"></i>
+                                        <h4>Software Developer Intern</h4>
+                                    </div>
+                                    <div class="exp-company">
+                                        <span class="company-name">OMX Digital PVT LTD</span>
+                                        <span class="exp-duration">Feb 2025 - Present</span>
+                                    </div>
+                                </div>
+                                <div class="exp-content">
+                                    <ul class="responsibilities-list">
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Collaborated with cross-functional development team to build and maintain web applications using PHP (Laravel) and React.js</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Enhanced application performance and user experience through optimized code and responsive design</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Used Git for version control and participated in regular code reviews to ensure code quality and best practices</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Participated in full software development lifecycle including requirement analysis, coding, debugging, testing, and deployment</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="edu-header">
+                                    <i class='fas fa-graduation-cap'></i>
+                                    <h4>Bachelor of Computer Application (BCA)</h4>
+                                </div>
+                                <div class="edu-content">
+                                    <p class="edu-school">Inspiria Knowledge Campus</p>
+                                    <p class="edu-period">Aug 2022 - June 2025 | CGPA: 7.82/10</p>
+                                    <div class="edu-courses">
+                                        <p class="courses-title">Key Coursework:</p>
+                                        <ul class="courses-list">
+                                            <li>Data Structures & Algorithms</li>
+                                            <li>DBMS</li>
+                                            <li>Operating Systems</li>
+                                            <li>Computer Networks</li>
+                                            <li>Web Development</li>
+                                            <li>OOP</li>
+                                            <li>Software Engineering</li>
+                                            <li>Cloud Computing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="edu-header">
+                                    <i class='fas fa-graduation-cap'></i>
+                                    <h4>Higher Secondary (H.S)</h4>
+                                </div>
+                                <div class="edu-content">
+                                    <p class="edu-school">Hindi Madhyamik Vidyalaya</p>
+                                    <p class="edu-period">2022 | Percentage: 78.2%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="Certificate">
+                        <h4><span style="color: #515be9;">Certifications</span></h4>
+                        <ul class="certificate-list">
+                            <li class="cert-item">
+                                <div class="cert-info">
+                                    <i class="fa-solid fa-certificate"></i>
+                                    <span>Certificate of Full Stack Mastery</span>
+                                </div>
+                                <a href="https://www.udemy.com/certificate/UC-80ecbaf9-0d2e-45ae-aeab-0f78375e8966/" 
+                                   target="_blank" 
+                                   class="cert-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="hide-mobile">View Certificate</span>
+                                </a>
                             </li>
-                           
+                            <li class="cert-item">
+                                <div class="cert-info">
+                                    <i class="fa-solid fa-certificate"></i>
+                                    <span>Certificate of WebDevelopment Internship</span>
+                                </div>
+                                <a href="https://www.linkedin.com/in/aditya-jaiswal-web/details/certifications/1731725577174/single-media-viewer/?profileId=ACoAADzBqzUBDSZDUy4mA8cKeVw4dtqdDfQYI_o" 
+                                   target="_blank" 
+                                   class="cert-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="hide-mobile">View Certificate</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
+                    <div class="tab-contents" id="Activities">
+                        <h4><span style="color: #515be9;">Extra Curricular Activities</span></h4>
+                        <ul class="activities-list">
+                            <li class="activity-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Active member of Computing Club - Participating in tech discussions, workshops, and events</span>
+                            </li>
+                            <li class="activity-item">
+                                <i class="fa-solid fa-trophy"></i>
+                                <span>Event Organization - Organized inter-college gaming competitions including Free Fire mobile game tournament, enhancing event planning and team coordination skills</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+</section>
+<section id="services" class="section">
+    <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Full-Stack Development</h3>
+                <p>Building complete web applications using modern technologies like PHP (Laravel), React.js, and Node.js. From database design to responsive frontend interfaces.</p>
+                <a href="#contact">Get Started →</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Web Design</h3>
+                <p>Creating beautiful, user-friendly websites that work perfectly on all devices. Focus on modern UI/UX principles and performance optimization.</p>
+                <a href="#contact">Learn More →</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Website Maintenance</h3>
+                <p>Regular updates, bug fixes, security patches, and performance optimization to keep your website running smoothly and securely.</p>
+                <a href="#contact">Learn More →</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="section">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="portfolio-grid">
+           <div class="project-card">
+    <div class="project-image">
+        <img src="/img/work5.png" alt="Kachda Landing Page">
+        <div class="project-overlay">
+            <a href="https://kachda-nextjs.vercel.app" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                View Project
+            </a>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3>Simple Landing Page – Kachda</h3>
+        <p>
+            A clean and responsive landing page built using Next.js, Bootstrap, and CSS3. Designed to showcase a minimal and structured layout with sections like hero, features, and call-to-action. Ideal for startups or product showcases.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
         </div>
     </div>
 </div>
 
-</div>
-<div id="sevices">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div class="card">
-                <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>The project involved creating a visually striking and user-friendly design that highlights the photographer's portfolio. Using HTML, CSS, and
-                 JavaScript, I developed a responsive website that looks great on all devices. </p>
-        <a href="">learn more
-        </a>
+
+            <!-- <div class="project-card">
+                <div class="project-image">
+                    <img src="/img/calculator.png" alt="Web Calculator">
+                    <div class="project-overlay">
+                        <a href="https://calculator-ten-xi-75.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Web Calculator</h3>
+                    <p>A fully functional web calculator with modern design and smooth animations. Features basic arithmetic operations with a clean, intuitive interface.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div> -->
+ <div class="project-card">
+  <div class="project-image">
+    <img src="/img/sarasnova-homepage.png" alt="SarasNova Landing Page">
+    <div class="project-overlay">
+      <a href="https://www.sarasnova.com" target="_blank" class="project-link">
+        <i class="fas fa-external-link-alt"></i>
+        View Project
+      </a>
     </div>
-    <div class="card">
-        <i class="fa-solid fa-code"></i>
-        <h2>UX/UI Design</h2>
-        <p>Comming soon </p>
-    <a href="">learn more
-    </a>
+  </div>
+  <div class="project-content">
+    <h3>SarasNova – AI Analytics Platform</h3>
+    <p>
+      A sleek and modern marketing site for an AI‑powered analytics consultancy. Highlights their 4‑tier analytics journey, visual dashboards, low‑code tools, and enterprise readiness. Optimized for performance, SEO, and scalability.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">Next.js</span>
+      <span class="tech-tag">Tailwind CSS</span>
+      <span class="tech-tag">TypeScript</span>
+      <span class="tech-tag">React</span>
+    </div>
+  </div>
 </div>
-<div class="card" >
-    <i class="fa-solid fa-code"></i>    
-    <h2> Website Maintenance and Optimization</h2>
-    <p>Regular updates, bug fixes, and security patches are essential for keeping a website running smoothly.  
-         </p>
-<a href="">learn more
-</a>
-    </div> 
-            
+           
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/img/work6.png" alt="Social Media App">
+                    <div class="project-overlay">
+                        <a href="https://uniformat.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>UniFormat II Taxonomy Tool</h3>
+                    <p>A structured classification interface for building systems based on the UniFormat II standard. Built with a responsive layout and dynamic browsing experience, this project highlights full-stack skills using modern frameworks. Enables hierarchical navigation through architectural elements with support for CRUD operations via Supabase.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Supabase</span>  
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+  <div class="project-image">
+    <img src="/img/frameflippers-home.png" alt="Frame Flippers Landing Page">
+    <div class="project-overlay">
+      <a href="https://frameflippers.vercel.app" target="_blank" class="project-link">
+        <i class="fas fa-external-link-alt"></i>
+        View Project
+      </a>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3>Frame Flippers – Video Agency Landing Page</h3>
+    <p>
+      A sleek, responsive landing page built to promote a video production agency.
+      Powered by **Next.js** and **Tailwind CSS** on the frontend, with a backend API layer using **Nest.js** for contact form submissions or booking integrations.
+      Highlights smooth animations, clear service sections, and performance-optimized SEO.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">Next.js</span>
+      <span class="tech-tag">Tailwind CSS</span>
+      <span class="tech-tag">TypeScript</span>
+      <span class="tech-tag">Nest.js</span>
+    </div>
+  </div>
+</div>
+
         </div>
     </div>
- 
-</div>
-<div id="portfolio">
+</section>
+<section id="contact" class="section">
     <div class="container">
-        <h1 class="sub-title">My Work </h1>
-        <div class="work-li">
-           <div class="work">
-            <img src="/img/work12.jpg" alt="">
-            <div class="layer">
-                <h3>Netfilix homepage-clone</h3>
-                <p>my first html work </p>
-                <a href="https://netflix-home-page-clone--tau.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>I'm currently looking for new opportunities and exciting projects. Whether you have a question, want to collaborate, or just want to say hi, I'll try my best to get back to you!</p>
+
+                <ul class="contact-details">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>aditya18.work.office@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+91-8327693057</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Siliguri, India</span>
+                    </li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="https://github.com/adityajaiswal69" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-jaiswal-359453245/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <div style="margin-top: var(--spacing-lg);">
+                    <a href="./img/My cv.pdf" download class="btn-modern btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
             </div>
-      
-           </div>  
-           <div class="work">
-            <img src="/img/calculator.png" alt="">
-            <div class="layer">
-                <h3> Web Calculator </h3>
-                <p>Creating a web calculator involves a combination of HTML, CSS, and JavaScript. HTML structures the calculator's layout, defining buttons, displays, and other elements.
 
-                </p>
-                <a href="https://calculator-ten-xi-75.vercel.app/ " target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-      
-           </div>
-           <div class="work">
-            <img src="/img/work3.png" alt="">
-            <div class="layer">
-                <h3>social media app</h3>
-                <p>the app connect nothing </p>
-                <a href="https://code-soft-apjrpd79v-aditya-jaiswals-projects-4036915c.vercel.app"   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div> 
-      
-           </div>
-        </div>
-        <a href="#" class="btn">See More!</a>
-    </div>
-</div>
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p>Let's Connect
-                    I'm currently looking for new oppoutunities, my inbox is always open, Whether you have a question or just want to say hi, I'll try my best to get back to you!  </p>
-                <p><i class="fa-solid fa-envelope"></i>adityajaiswal5007@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>+91-8327693057</p>
-                <div class="social-icon">
+            <div class="contact-form">
+                <h3>Send Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="from_name">Full Name</label>
+                        <input type="text" id="from_name" name="from_name" required>
+                    </div>
 
-                    <a href="https://github.com/adityajaiswal69"><i class="fa-brands fa-github"></i></a>
-                    
-                    <a href="https://www.linkedin.com/in/aditya-jaiswal-359453245/"><i class="fa-brands fa-linkedin"></i></a>
-                   
-                    
-                </div><br>
-                <button class="btn2 btnd" ><span class="spn2"><a href="./img/My cv.pdf" download>
-                    Download CV
-                  </a></span></button>    
-                
+                    <div class="form-group">
+                        <label for="from_email">Email Address</label>
+                        <input type="email" id="from_email" name="from_email" required>
+                    </div>
 
-            </div>
-            <div class="contact-right">
-                
-<div class="card">
-  <span class="title">Leave a Comment</span>
-  <form class="form" name="submit-to-google-sheet">
-    <div class="group">
-    <input placeholder="" type="text" required="">
-    <label for="name">Name</label>
-    </div>
-<div class="group">
-    <input placeholder="" type="email" id="email" name="email" required="">
-    <label for="email">Email</label>
-    </div>
-<div class="group"> 
-    <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
-    <label for="comment">Comment</label>
-</div>
-    <button type="submit">Submit</button>
-  </form>
-</div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project or just say hello!" required></textarea>
+                    </div>
 
-               
+                    <button type="submit" class="submit-btn" id="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+
+                <div id="form-status" class="form-status" style="display: none;">
+                    <p id="status-message"></p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
-    <hr class="line" color="#252525">
-    
-    <div class="copyright">
-        Aditya <p>All Right Reserved</p>
-    </div>
-    <hr class="line">
-</div>
 
-</div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 <span class="highlight">Aditya Jaiswal</span>. All rights reserved. Built with ❤️ and modern web technologies.</p>
+        </div>
+    </footer>
+</section>
 
 <script>
     
